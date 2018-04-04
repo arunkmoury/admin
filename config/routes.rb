@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  root 'welcome#index'
+
+  # auth controller routes
+  get 'login', to: 'auth#login'
+  get 'register', to: 'auth#register'
+  get 'forgot-password', to: 'auth#forgot-password'
+
+  # welcome controller routes
+  get 'cards', to: 'welcome#cards'
+  get 'charts', to: 'welcome#charts'
+  get 'tables', to: 'welcome#tables'
+
 end

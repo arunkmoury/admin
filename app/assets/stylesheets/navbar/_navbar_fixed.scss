@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 #mainNav.fixed-top {
   .sidenav-toggler {
     display: none;
