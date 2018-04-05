@@ -12,26 +12,22 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <%# <a class="nav-link" href="charts.html">
-            <i class="fa fa-fw fa-area-chart"></i>
-            <span class="nav-link-text">Charts</span>
-          </a> %>
           <%= link_to charts_path, class: 'nav-link' do %>
-            <i class="fa fa-fw fa-area-chart"></i>  
+            <i class="fas fa-chart-area"></i>  
             <span class="nav-link-text">Charts</span>
           <% end %>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
-            <i class="fa fa-fw fa-table"></i>
+          <%= link_to tables_path, class: 'nav-link' do %>
+            <i class="fas fa-table"></i>
             <span class="nav-link-text">Tables</span>
-          </a>
+          <% end %>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-wrench"></i>
+          <%= link_to "#collapseComponents", class: 'nav-link nav-link-collapse collapsed', :data => {:toggle => 'collapse', :parent => '#exampleAccordion'} do %>
+            <i class="fas fa-wrench"></i>
             <span class="nav-link-text">Components</span>
-          </a>
+          <% end %>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
               <a href="navbar.html">Navbar</a>
@@ -42,10 +38,10 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-file"></i>
+          <%= link_to '#collapseExamplePages', class: 'nav-link nav-link-collapse collapsed', :data => {:toggle => 'collapse', :parent => '#exampleAccordion'} do %>
+            <i class="fas fa-file"></i>
             <span class="nav-link-text">Example Pages</span>
-          </a>
+          <% end %>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
               <a href="login.html">Login Page</a>
@@ -62,10 +58,10 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-sitemap"></i>
+          <%= link_to '#collapseMulti', class: 'nav-link nav-link-collapse collapsed', :data => {:toggle => 'collapse', :parent => '#exampleAccordion'} do %>
+            <i class="fas fa-sitemap"></i>
             <span class="nav-link-text">Menu Levels</span>
-          </a>
+          <% end %>
           <ul class="sidenav-second-level collapse" id="collapseMulti">
             <li>
               <a href="#">Second Level Item</a>
@@ -93,10 +89,10 @@
           </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
+          <%= link_to '#', class: 'nav-link' do %>
+            <i class="fas fa-link"></i>
             <span class="nav-link-text">Link</span>
-          </a>
+          <% end %>
         </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
